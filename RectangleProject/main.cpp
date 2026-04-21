@@ -44,3 +44,14 @@ double calcPerimeter(double length, double width)
 {
 	return 2 * (length + width);
 }
+
+/* 
+Function: calcArea
+Purpose: Calculate and return area of rectangle.
+Preconditions: Length and WIdth validation (>0)
+Postconditions: Returns Area
+*/
+double calcArea(double length, double width)
+{
+	return length * width;
+}
