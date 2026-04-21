@@ -33,3 +33,14 @@ void getLengthWidth(double& length, double& width)
 			cout << "Invalid input: Width must be greater than 0. Please try again." << endl;
 	} while (width <= 0);
 }
+
+/*
+Funcation: calcPerimeter
+Purpose: Calculate and return perimiter of rectangle.
+Preconditions: Lenth and Width validation (>0)
+Postconditions: Returns Perimeter
+*/
+double calcPerimeter(double length, double width)
+{
+	return 2 * (length + width);
+}
