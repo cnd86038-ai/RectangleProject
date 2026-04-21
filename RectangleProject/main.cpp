@@ -63,7 +63,7 @@ Preconditions: Valid perimeter and area values
 Postconditions: Results are displayed
 */
 
-void displayProperties(double length, double width, double perimeter, double area)
+void displayProperties(double perimeter, double area)
 {
 	cout << "Rectangle Properties:" << endl;
 	cout << "Perimeter: " << perimeter << endl;
