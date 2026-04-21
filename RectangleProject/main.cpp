@@ -55,3 +55,45 @@ double calcArea(double length, double width)
 {
 	return length * width;
 }
+
+/*
+Function: displayProperties
+Purpose:Displays the Properties of Rectangle
+Preconditions: Valid perimeter and area values
+Postconditions: Results are displayed
+*/
+
+void displayProperties(double length, double width, double perimeter, double area)
+{
+	cout << "Rectangle Properties:" << endl;
+	cout << "Perimeter: " << perimeter << endl;
+	cout << "Area: " << area << endl;
+}
+
+int main()
+{
+	double length, width;
+	double perimeter, area;
+	char choice;
+
+	do
+		{
+		//Get valid input for length and width
+		getLengthWidth(length, width);
+
+		//Calculate perimeter and area
+		perimeter = calcPerimeter(length, width);
+		area = calcArea(length, width);
+
+		//Display the results
+		displayProperties(perimeter, area);
+
+		// Ask user if they want to calculate properties for another rectangle
+		cout << "Do you want to calculate properties for another rectangle? (y/n): ";
+		cin >> choice;
+	} while (choice == 'y' || choice == 'Y');
+
+	cout << "Thank you for using the Rectangle Properties Calculator. Goodbye!" << endl;
+
+	return 0;
+}
